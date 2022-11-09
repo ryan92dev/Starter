@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+.dark {
+  --bg-primary: theme("colors.slate.900");
+  --bg-secondary: theme("colors.slate.800");
+  --bg-tertiary: theme("colors.slate.600");
+
+  --text-primary: theme("colors.slate.100");
+  --text-secondary: theme("colors.slate.600");
+  --text-tertiary: theme("colors.slate.400");
+
+  --button-primary: theme("colors.blue.400");
+  --button-hover: theme("colors.blue.300");
+  --button-active: theme("colors.blue.600");
+
+  --button-text: theme("colors.slate.100");
+}
+
+.light {
+  --bg-primary: theme("colors.white");
+  --bg-secondary: theme("colors.slate.100");
+  --bg-tertiary: theme("colors.slate.200");
+
+  --text-primary: theme("colors.slate.900");
+  --text-secondary: theme("colors.slate.600");
+  --text-tertiary: theme("colors.slate.500");
+
+  --button-primary: theme("colors.slate.900");
+  --button-hover: theme("colors.slate.700");
+  --button-active: theme("colors.blue.600");
+  --button-text: theme("colors.slate.100");
+}
